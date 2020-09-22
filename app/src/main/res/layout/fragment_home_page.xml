@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePageFragment">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Search..."
+        android:inputType="textPersonName" />
+
+
+    <LinearLayout
+        android:id="@+id/dbLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/searchDbBtn"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left"
+            android:text="Search Db" />
+
+        <Button
+            android:id="@+id/addListBtn"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left"
+            android:text="Add to list" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="356dp"
+        android:background="#80D8FF" />
+
+
+    <LinearLayout
+        android:id="@+id/apiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/searchApiBtn"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:onClick="Search"
+            android:layout_marginLeft="45dp"
+            android:text="Search API" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:text="clear List" />
+
+        <Button
+            android:id="@+id/savedLists"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:text="Your Lists" />
+    </LinearLayout>
+
+</LinearLayout>

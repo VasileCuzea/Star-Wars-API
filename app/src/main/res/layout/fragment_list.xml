@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resultsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80D8FF"
+    android:orientation="vertical"
+    tools:context=".ListFragment">
+
+
+    <TextView
+        android:id="@+id/Results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Results:"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/receiveFavoriteList"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/saveSendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveListBtn"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:onClick="SaveList"
+            android:layout_marginLeft="45dp"
+            android:text="Save List" />
+
+        <Button
+            android:id="@+id/seeListBtn"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:onClick="SeeList"
+            android:text="See Lists" />
+
+        <Button
+            android:id="@+id/sendListBtn"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:onClick="SendList"
+            android:text="Send List" />
+    </LinearLayout>
+
+</LinearLayout>
